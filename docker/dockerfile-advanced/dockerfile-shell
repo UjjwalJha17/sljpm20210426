@@ -1,0 +1,6 @@
+FROM ubuntu
+ENTRYPOINT top -b
+CMD top --ignored-param1
+
+# docker build -t top -f dockerfile-shell .
+# docker run -it --rm --name test top --ignored-param2
